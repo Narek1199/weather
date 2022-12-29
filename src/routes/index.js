@@ -9,9 +9,10 @@ const routes = [
     path: "/",
     element: <MainLayout />,
     children: [
-      { path: "", element: <Navigate to="/onboarding" /> },
-      { path: "onboarding", element: <Onboarding /> },
-      { path: "dashboard", element: <Dashboard /> },
+      { path: "", element: <Navigate to="weather/onboarding" /> },
+      { path: "weather", element: <Navigate to="onboarding" /> },
+      { path: "weather/onboarding", element: <Onboarding /> },
+      { path: "weather/dashboard", element: <Dashboard /> },
     ],
   },
 ];
